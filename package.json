@@ -1,0 +1,11 @@
+{
+  "name": "booki",
+  "version": "1.0.0",
+  "description": "Projet 2 OC",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guieba Kévin",
+  "license": "ISC"
+}
