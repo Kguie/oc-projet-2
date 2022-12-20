@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Booki</title>
@@ -21,9 +20,77 @@
         </nav>
     </header>
 
-    <main>
+    <!-- Main part -->
+    <main class="main">
 
+        <!-- Head section with search form, filters form and information part -->
+        <section class="head">
+            <h1 class="head__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="head__subtitle">En plein centre-ville ou en pleine nature</p>
+
+            <!-- Search form -->
+            <form class="head__search" method="post" action="#">
+                <label for="location" class="head__search__label">
+                    <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input class="head__search__location" type="text" name="location" id="location"
+                    placeholder="Marseille, France">
+                <button class="head__search__btn">
+                    <p class="head__search__btn__text">Rechercher</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <!-- Filters form -->
+            <div class="head__filters">
+                <p class="head__filters__title">Filtres</p>
+                <form class="head__filters__form" method="post" action="#">
+                    <div class="head__filters__form--option">
+                        <input class="head__filters__form--option__checkbox" type="checkbox" name="Économique"
+                            id="Économique">
+                        <label class="head__filters__form--option__label" for="Économique">
+                            <i class="fa-solid fa-money-bill-wave"></i><span
+                                class="head__filters__form--option__label__text">Économique</span></label>
+                    </div>
+                    <div class="head__filters__form--option">
+                        <input class="head__filters__form--option__checkbox" type="checkbox" name="Familial"
+                            id="Familial">
+                        <label class="head__filters__form--option__label" for="Familial">
+                            <i class="fa-solid fa-child-reaching"></i><span
+                                class="head__filters__form--option__label__text">Familial</span></label>
+                    </div>
+                    <div class="head__filters__form--option">
+                        <input class="head__filters__form--option__checkbox" type="checkbox" name="Romantique"
+                            id="Romantique">
+                        <label class="head__filters__form--option__label" for="Romantique">
+                            <i class="fa-solid fa-heart"></i><span
+                                class="head__filters__form--option__label__text">Romantique</span></label>
+                    </div>
+                    <div class="head__filters__form--option">
+                        <input class="head__filters__form--option__checkbox" type="checkbox" name="Animaux autorisés"
+                            id="Animaux autorisés">
+                        <label class="head__filters__form--option__label" for="Animaux autorisés">
+                            <i class="fa-solid fa-dog"></i>
+                            <span class="head__filters__form--option__label__text">Animaux autorisés</span></label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Head info -->
+            <div class="head__info">
+                <span class="head__info__icon"><i class="fa-solid fa-info"></i></span>
+                <span class="head__info__text">Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+
+        </section>
+        <section class="lodgings" id="lodgings">
+
+        </section>
+        <section class="activities" id="activities">
+
+        </section>
     </main>
+
     <footer>
 
     </footer>

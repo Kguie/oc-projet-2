@@ -27,6 +27,7 @@ body {
     width: 61px;
     height: 19px;
     margin-top: 45px;
+    margin-left: 5px;
 }
 
 .header__nav {
@@ -51,17 +52,277 @@ body {
     color: #0065FC;
 }
 
-/* Tablet version breakpoint: 992px */
-@media (max-width: 991px) {
+/* Main */
+
+/* Head section */
+.head {
+    margin-top: 60px;
+}
+
+.head__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-left: 5px;
+}
+
+.head__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+/* Head search form */
+.head__search {
+    display: flex;
+    width: 32%;
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.head__search__label {
+    width: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 18px;
+}
+
+.head__search__location {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #000000;
+    padding-left: 15px;
+    border: 1px solid #F2F2F2;
+    max-width: 230px;
+}
+
+.head__search__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    min-width: 132px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.head__search__btn .fa-solid {
+    display: none;
+}
+
+/* Head search Filters form */
+.head__filters {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 10px;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.head__filters__title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.head__filters__form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 37px;
+
+}
+
+.head__filters__form--option {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 17px;
+    line-height: 20px;
+    overflow: hidden;
+    /* z-index: -3; */
+}
+
+.head__filters__form--option__label {
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.head__filters__form--option__label__text {
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+/* After added for the checkbox background color effect */
+.head__filters__form--option__label::after {
+    display: flex;
+    content: "";
+    position: absolute;
+    background-color: #DEEBFF;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: -2;
+
+}
+
+.head__filters__form--option__checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.head__filters__form--option .fa-solid {
+    color: #0065FC;
+    margin-right: 10px;
+    font-size: 22px;
+    z-index: -1;
+}
+
+/* Hover effect */
+.head__filters__form--option__checkbox:hover~.head__filters__form--option__label::after {
+    opacity: 1;
+}
+
+/* Checked effect */
+.head__filters__form--option__checkbox:checked~.head__filters__form--option__label::after {
+    opacity: 1;
+}
+
+
+/* Head info part */
+.head__info {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head__info__icon {
+    display: flex;
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    min-width: 24px;
+}
+
+.head__info__icon .fa-solid {
+    font-size: 10px;
+    color: #0065FC;
+}
+
+.head__info__text {
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+
+/* Tablet version, breakpoint: 992px */
+@media only screen and (max-device-width : 991px) {
 
     /* Base */
     body {
         width: 86%;
+        margin: 0 auto;
     }
+
+    /* Header */
+    .header__logo {
+
+        margin-left: 0;
+    }
+
+    .header__nav {
+        display: flex;
+        gap: 65px;
+        margin-right: 0;
+    }
+
+    .header__nav__link {
+        padding: 45px 0px 0px 0px;
+    }
+
+    /* Main */
+
+    /* Head section */
+    .head {
+        margin-top: 55px;
+    }
+
+    .head__title {
+        margin-left: 0;
+    }
+
+
+    .head__subtitle {
+        margin-top: 13px;
+        margin-left: 0;
+    }
+
+    /* Head search form */
+    .head__search {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .head__filters {
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .head__filters__form {
+        gap: 20px;
+    }
+
+    .head__filters__form--option {
+        display: flex;
+        border: 2px solid #D9D9D9;
+        border-radius: 25px;
+        padding: 14px 20px;
+
+    }
+
+
+
 }
 
-/* Smartphone version breakpoint: 768px */
-@media (max-width: 767px) {
+/* Smartphone version, breakpoint: 768px */
+@media only screen and (max-device-width : 767px) {
 
     /* Base */
     body {
@@ -93,6 +354,87 @@ body {
         border-top-color: transparent;
         color: #0065FC;
         border-bottom-color: #0065FC;
+    }
+
+    /* Main */
+
+    /* Head section */
+
+    .head {
+        margin-top: 30px;
+        width: 89%;
+        margin: 0 auto;
+    }
+
+    .head__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    /* Head search form */
+    .head__search {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .head__search__btn {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .head__search__btn__text {
+        display: none;
+    }
+
+    .head__search__btn .fa-solid {
+        display: block;
+
+    }
+
+    /* Head search Filters form */
+    .head__filters {
+        margin-top: 33px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .head__filters__form {
+        gap: 17px 0;
+        justify-content: space-between;
+    }
+
+    .head__filters__form--option {
+        width: 158px;
+        padding: 13px 0 14px 0;
+        gap: 5px;
+        align-items: center;
+        font-size: 11px;
+        line-height: 13px;
+
+    }
+
+    .head__filters__form--option__label {
+        margin-left: 13px;
+    }
+
+    /* Head info part */
+    .head__info {
+        margin-top: 40px;
+        align-items: baseline;
+
+    }
+
+    .head__info__icon .fa-solid {
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    .head__info__text {
+        font-size: 16px;
+        line-height: 19px;
+
     }
 
 
