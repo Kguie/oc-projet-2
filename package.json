@@ -4,8 +4,12 @@
   "description": "Projet 2 OC",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"yarn live-server"
   },
   "author": "Guieba Kévin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
 }
