@@ -12,10 +12,9 @@
 - [Documentation](#documentation)
 - [Licence](#licence)
 - [Auteurs](#auteurs)
-- [Contact](#contact)
 
 
-## Introduction ##
+## Introduction 
 
 L'objectif ici est d'intégrer l'interface du site Booki avec du code HTML et CSS à partir des maquettes disponibles sur [Figma](https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/Projet-2-FR---Booki?node-id=349%3A1)
 
@@ -34,20 +33,16 @@ L'objectif ici est d'intégrer l'interface du site Booki avec du code HTML et CS
 
 ## Structure du Projet
 
-├── assets/ assets  # Dossier contenant les images
-├── css/            # Dossier contenant style.css
-└── index.html      # Point d'entrée de l'application
+- assets/         # Dossier contenant les images
+- css/            # Dossier contenant style.css
+- index.html      # Point d'entrée de l'application
 
 ## Auteurs
 
 - [GUIEBA Kévin](https://github.com/Kguie/)
 
-## Contact
 
-- Si vous vous voulez me contacter, vous pouvez le faire à cette adresse: kevin.guieba@gmail.com
-
-
-### Exigences fonctionnelles ###
+## Exigences fonctionnelles 
 
 - Le site doit être réalisé en desktop first.
 
@@ -59,7 +54,7 @@ L'objectif ici est d'intégrer l'interface du site Booki avec du code HTML et CS
 
 - Les textes “Hébergements” et “Activités”, situés dans l’en-tête, sont des liens. Ils doivent mener respectivement vers la section “Hébergements à Marseille” et “Activités à Marseille”.
 
-##" Outils et contraintes techniques ###
+## Outils et contraintes techniques 
 
 - Trois maquettes ont été réalisées:
 
