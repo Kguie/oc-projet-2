@@ -21,13 +21,13 @@ L'objectif ici est d'intégrer l'interface du site Booki avec du code HTML et CS
 
 ## Installation
 
-- Prérequis système : Ce e-portfolio est réalisé sous HTML et CSS.
+- Prérequis système : Ce site est réalisé sous HTML et CSS.
 - Installation des dépendances : Cloner ce repository et lancer `yarn install` pour installer les dépendances.
 
 
 ## Utilisation
 
-- Utiliser  `yarn start` pour lancer l'application.
+- Utiliser  `yarn start` pour lancer live server.
 - Ouvrir [http://localhost:3000](http://localhost:3000) pour le  voir dans le navigateur.
 
 
