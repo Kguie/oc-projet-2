@@ -9,9 +9,9 @@
 - [Installation](#installation)
 - [Utilisation](#utilisation)
 - [Structure du Projet](#structure-du-projet)
-- [Documentation](#documentation)
-- [Licence](#licence)
 - [Auteurs](#auteurs)
+- [Exigences fonctionnelles](#exigences-fonctionnelles)
+- [Outils et contraintes techniques](#outils-et-contraintes-techniques)
 
 
 ## Introduction 
